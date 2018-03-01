@@ -53,6 +53,5 @@ public class MainActivity extends AppCompatActivity {
             final String name = intent.putExtra(Keys.name);
             final String legs = intent.putExtra(Keys.legs);
             final String information = intent.putExtra(Keys.information);
-            final String furryCreature = intent.putExtra(Keys.hasFur);}});}}
-
-
+            final String furryCreature = intent.putExtra(Keys.hasFur);
+                    }});}}

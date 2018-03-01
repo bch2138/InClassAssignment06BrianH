@@ -3,7 +3,7 @@ package com.example.uhylabr.inclassassignment06_brianh;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -14,13 +14,14 @@ public class SecondActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-    Animal animalName = (Animal) intent.getSerializableExtra(Keys.name);
-    Animal animalLegs = (Animal) intent.getSerializableExtra(Keys.legs);
-    Animal animalInformation = (Animal) intent.getSerializableExtra(Keys.information);
-    Animal furryCreature = (Animal) intent.getBooleanExtra(Keys.furryCreature, true);
+    final Animal animalName = (Animal) intent.getSerializableExtra(Keys.name);
+    final Animal animalLegs = (Animal) intent.getSerializableExtra(Keys.legs);
+    final Animal animalInformation = (Animal) intent.getSerializableExtra(Keys.information);
+    final Animal furryCreature = (Animal) intent.getSerializableExtra(Keys.furryCreature);
 
+        TextView animal=(TextView)findViewById(R.id.animal);
 
-
+System.out.println(animal);
 
     startActivity(intent);}}
 

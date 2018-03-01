@@ -9,5 +9,6 @@ public interface Keys {
         String name = "name";
         String legs = "legs";
         String information = "information";
+        String furryCreature="furryCreature";
         Boolean hasFur = true;
 }
